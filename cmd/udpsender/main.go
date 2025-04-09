@@ -18,7 +18,7 @@ func main() {
 
 	conn, err := net.DialUDP("udp", nil, address)
 	if err != nil {
-		fmt.Errorf("error settting up connection")
+		fmt.Println("error settting up connection")
 	}
 	defer conn.Close()
 
